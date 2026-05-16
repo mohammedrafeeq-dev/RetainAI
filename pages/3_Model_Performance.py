@@ -69,7 +69,7 @@ with col_roc:
         legend=dict(x=0.4, y=0.05, bgcolor='rgba(0,0,0,0)', font=dict(size=11)),
         font=dict(color='#94a3b8'),
     )
-    st.plotly_chart(fig_roc, use_container_width=True)
+    st.plotly_chart(fig_roc, width='stretch')
 
 # ── Confusion Matrices ───────────────────────────────────────
 with col_cm:
@@ -94,7 +94,7 @@ with col_cm:
                 yaxis=dict(title="Actual", autorange='reversed'),
                 font=dict(color='#94a3b8', size=13),
             )
-            st.plotly_chart(fig_cm, use_container_width=True)
+            st.plotly_chart(fig_cm, width='stretch')
 
 st.markdown(glow_divider(), unsafe_allow_html=True)
 
@@ -123,7 +123,7 @@ fig_comp.update_layout(
                 bgcolor='rgba(0,0,0,0)', font=dict(size=12)),
     font=dict(color='#94a3b8'),
 )
-st.plotly_chart(fig_comp, use_container_width=True)
+st.plotly_chart(fig_comp, width='stretch')
 
 st.markdown(glow_divider(), unsafe_allow_html=True)
 
@@ -162,7 +162,7 @@ with cv_col1:
         legend=dict(orientation='h', y=1.1, bgcolor='rgba(0,0,0,0)'),
         font=dict(color='#94a3b8'),
     )
-    st.plotly_chart(fig_cv, use_container_width=True)
+    st.plotly_chart(fig_cv, width='stretch')
 
 with cv_col2:
     # Stability analysis table

@@ -144,7 +144,7 @@ fig.update_layout(
                range=[0, 1.05], zerolinecolor='rgba(255,255,255,0.06)'),
     font=dict(color='#94a3b8'),
 )
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width='stretch')
 
 # ── Retention Strategy ───────────────────────────────────────
 strategy = RETENTION_STRATEGIES.get(seg, "No specific strategy available.")

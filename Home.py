@@ -83,7 +83,7 @@ with col_left:
         annotations=[dict(text=f"<b>{total:,}</b><br>Customers",
                           x=0.5, y=0.5, font_size=16, font_color='#94a3b8', showarrow=False)]
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
 with col_right:
     st.markdown(section_header("📈 Churn Probability by Segment"), unsafe_allow_html=True)
@@ -102,7 +102,7 @@ with col_right:
         xaxis=dict(gridcolor='rgba(255,255,255,0.04)'),
         font=dict(color='#94a3b8'),
     )
-    st.plotly_chart(fig2, use_container_width=True)
+    st.plotly_chart(fig2, width='stretch')
 
 st.markdown(glow_divider(), unsafe_allow_html=True)
 
@@ -122,7 +122,7 @@ display_df['churn_probability'] = display_df['churn_probability'].apply(lambda x
 display_df.columns = [c.replace('_', ' ').title() for c in display_df.columns]
 display_df.index = [f"Customer #{i}" for i in display_df.index]
 
-st.dataframe(display_df, use_container_width=True, height=400)
+st.dataframe(display_df, width='stretch', height=400)
 
 # ── Download ─────────────────────────────────────────────────
 csv = profiles[profiles['high_risk']==1].to_csv(index=False)

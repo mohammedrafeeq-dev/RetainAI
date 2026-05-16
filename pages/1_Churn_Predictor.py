@@ -64,7 +64,7 @@ if 'avg_session_time' in input_vals and 'total_visits' in input_vals:
 st.markdown(glow_divider(), unsafe_allow_html=True)
 
 # ── Predict ──────────────────────────────────────────────────
-if st.button("🔮 Predict Churn Risk", use_container_width=True):
+if st.button("🔮 Predict Churn Risk", width='stretch'):
     with st.spinner("Analyzing customer profile..."):
         prob, pred, scaled = predict_single(input_vals)
 
@@ -117,7 +117,7 @@ if st.button("🔮 Predict Churn Risk", use_container_width=True):
             margin=dict(t=60, b=20, l=40, r=40),
             font=dict(color='#e2e8f0'),
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
 
     with res_col2:
         # Risk assessment card
@@ -175,7 +175,7 @@ if st.button("🔮 Predict Churn Risk", use_container_width=True):
             yaxis=dict(gridcolor='rgba(255,255,255,0.04)'),
             font=dict(color='#94a3b8', size=12),
         )
-        st.plotly_chart(fig3, use_container_width=True)
+        st.plotly_chart(fig3, width='stretch')
 
     # Download report
     report = pd.DataFrame([{

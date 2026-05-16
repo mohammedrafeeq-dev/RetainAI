@@ -6,8 +6,15 @@ import joblib
 import json
 import os
 
-BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 MODELS_DIR = os.path.join(BASE, "models")
+
+def safe_load(func, *args, **kwargs):
+    try:
+        return func(*args, **kwargs)
+    except Exception as e:
+        st.error(f"Error loading resource: {e}")
+        st.stop()
 
 
 @st.cache_resource(show_spinner=False)

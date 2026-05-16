@@ -13,7 +13,7 @@ def inject_css():
     }
 
     /* ── Hide defaults ─────────────────────────────────── */
-    #MainMenu, footer, header {visibility: hidden;}
+    #MainMenu, footer {visibility: hidden;}
     .stDeployButton {display: none;}
 
     /* ── Main container ────────────────────────────────── */

@@ -163,7 +163,7 @@ if st.button("🔮 Predict Churn Risk", width='stretch'):
             x=top_vals, y=top_names, orientation='h',
             marker=dict(
                 color=top_vals,
-                colorscale=[[0, '#1e3a5f'], [0.5, '#00d4ff'], [1, '#7c3aed']],
+                colorscale='Viridis',
                 line=dict(width=0),
             ),
         ))

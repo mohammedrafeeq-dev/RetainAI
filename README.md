@@ -24,7 +24,10 @@
 
 ## 🎯 Overview
 
-Customer churn is one of the most critical challenges in business — retaining existing customers is **5-7× cheaper** than acquiring new ones. **RetainAI** is a complete ML solution that:
+Customer churn is one of the most critical challenges in business — **retaining existing customers is 5–7× cheaper** than acquiring new ones. 
+
+**RetainAI** is an end-to-end Applied ML solution that:
+
 
 1. **Predicts** which customers are likely to churn using an optimised XGBoost classifier
 2. **Segments** customers into risk tiers using K-Means clustering
@@ -116,7 +119,12 @@ Applied ML/
 
 ---
 
+## 🌐 Live Demo
+
+Try it here: https://retainai.streamlit.app/
+
 ## 🚀 Quick Start
+
 
 ### Option 1: Google Colab (Recommended)
 

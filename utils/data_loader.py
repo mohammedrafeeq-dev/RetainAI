@@ -6,8 +6,9 @@ import joblib
 import json
 import os
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-MODELS_DIR = os.path.join(BASE, "models")
+from pathlib import Path
+BASE = Path(__file__).parent.parent
+MODELS_DIR = BASE / "models"
 
 def safe_load(func, *args, **kwargs):
     try:

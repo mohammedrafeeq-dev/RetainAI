@@ -22,6 +22,14 @@ with st.sidebar:
     st.markdown("# 🔄 RetainAI")
     st.markdown("""<div style='color:#64748b;font-size:0.8rem;margin:-8px 0 20px 0;'>
     Predictive Retention & Analytics</div>""", unsafe_allow_html=True)
+    
+    st.markdown("### 🗺️ Navigation")
+    st.page_link("RetainAI.py", label="Home", icon="🏠")
+    st.page_link("pages/1_Churn_Predictor.py", label="Churn Predictor", icon="🔮")
+    st.page_link("pages/2_Customer_Similarity.py", label="Customer Similarity", icon="👥")
+    st.page_link("pages/3_Model_Performance.py", label="Model Performance", icon="📊")
+    st.page_link("pages/4_About.py", label="About", icon="ℹ️")
+
     st.markdown(glow_divider(), unsafe_allow_html=True)
     st.markdown("""<div style='color:#64748b;font-size:0.75rem;padding:8px 0;'>
     <b style='color:#94a3b8;'>Platform Version</b> 1.0.0<br>

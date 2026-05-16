@@ -1,0 +1,42 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary scripts
+analyze_nb.py
+verify.py
+train_pipeline.py
+*.tmp
+*.bak
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# Old notebook versions
+Applied_ML_Final_Project*.ipynb
+transform_notebook.py
+analyze_nb*.py
+nb_full_dump.txt
+encoded_onehot_data.csv

@@ -1,0 +1,155 @@
+{
+  "gender": {
+    "type": "categorical",
+    "values": [
+      "Female",
+      "Male"
+    ]
+  },
+  "age": {
+    "type": "numeric",
+    "min": 18.0,
+    "max": 74.0,
+    "mean": 35.9264,
+    "median": 36.0
+  },
+  "city": {
+    "type": "categorical",
+    "values": [
+      "Berlin",
+      "Delhi",
+      "Dhaka",
+      "Hamburg",
+      "London",
+      "Mumbai",
+      "New York"
+    ]
+  },
+  "device_type": {
+    "type": "categorical",
+    "values": [
+      "Desktop",
+      "Mobile",
+      "Tablet"
+    ]
+  },
+  "subscription_type": {
+    "type": "categorical",
+    "values": [
+      "Annual",
+      "Monthly"
+    ]
+  },
+  "is_premium_user": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 1.0,
+    "mean": 0.30446666666666666,
+    "median": 0.0
+  },
+  "total_visits": {
+    "type": "numeric",
+    "min": 3.0,
+    "max": 31.0,
+    "mean": 15.000933333333334,
+    "median": 15.0
+  },
+  "avg_session_time": {
+    "type": "numeric",
+    "min": 0.0060949847141138,
+    "max": 19.1237155983209,
+    "mean": 8.020805414862629,
+    "median": 7.99190682727574
+  },
+  "pages_per_session": {
+    "type": "numeric",
+    "min": 0.0078450453266292,
+    "max": 10.8431720854223,
+    "mean": 4.002900767815061,
+    "median": 3.9969917171174547
+  },
+  "total_spent": {
+    "type": "numeric",
+    "min": 0.267290661917684,
+    "max": 15910.4318792316,
+    "mean": 522.5714495119239,
+    "median": 498.84385906874195
+  },
+  "avg_order_value": {
+    "type": "numeric",
+    "min": 0.0715957350948955,
+    "max": 154.554696224916,
+    "mean": 60.08088186050343,
+    "median": 60.10882722112345
+  },
+  "discount_used": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 1.0,
+    "mean": 0.49446666666666667,
+    "median": 0.0
+  },
+  "support_tickets": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 9.0,
+    "mean": 1.9956,
+    "median": 2.0
+  },
+  "refund_requested": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 1.0,
+    "mean": 0.14766666666666667,
+    "median": 0.0
+  },
+  "delivery_delay_days": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 11.0,
+    "mean": 2.981333333333333,
+    "median": 3.0
+  },
+  "satisfaction_score": {
+    "type": "numeric",
+    "min": 1.0,
+    "max": 5.0,
+    "mean": 3.608,
+    "median": 4.0
+  },
+  "nps_score": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "mean": 4.968666666666667,
+    "median": 5.0
+  },
+  "marketing_spend_per_user": {
+    "type": "numeric",
+    "min": 5.0,
+    "max": 30.0,
+    "mean": 17.575238,
+    "median": 17.63
+  },
+  "last_3_month_purchase_freq": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 14.0,
+    "mean": 6.975133333333333,
+    "median": 7.0
+  },
+  "spend_per_visit": {
+    "type": "numeric",
+    "min": 0.017819376273220517,
+    "max": 1142.480361812395,
+    "mean": 37.53780713991135,
+    "median": 33.41357207859495
+  },
+  "total_time_spent": {
+    "type": "numeric",
+    "min": 0.0792348012834794,
+    "max": 439.83640276290635,
+    "mean": 120.37711226292852,
+    "median": 114.63152526432
+  }
+}

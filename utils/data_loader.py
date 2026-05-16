@@ -7,7 +7,7 @@ import json
 import os
 
 from pathlib import Path
-BASE = Path(__file__).parent.parent
+BASE = Path.cwd()
 MODELS_DIR = BASE / "models"
 
 def safe_load(func, *args, **kwargs):

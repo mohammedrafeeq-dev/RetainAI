@@ -30,15 +30,19 @@ with st.sidebar:
     </div>""", unsafe_allow_html=True)
 
 # ── Load Data ────────────────────────────────────────────────
-profiles = load_customer_profiles()
-metrics = load_metrics()
-data = load_processed_data()
-class_dist = load_class_distribution()
+try:
+    profiles = load_customer_profiles()
+    metrics = load_metrics()
+    data = load_processed_data()
+    class_dist = load_class_distribution()
 
-total = len(profiles)
-churn_rate = profiles['high_risk'].mean()
-high_risk_n = profiles['high_risk'].sum()
-best_auc = metrics['results']['XGBoost']['ROC-AUC']
+    total = len(profiles)
+    churn_rate = profiles['high_risk'].mean()
+    high_risk_n = profiles['high_risk'].sum()
+    best_auc = metrics['results']['XGBoost']['ROC-AUC']
+except Exception as e:
+    st.error(f"📡 Data sync in progress... Please refresh in 30 seconds. ({e})")
+    st.stop()
 
 # ── Header ───────────────────────────────────────────────────
 st.markdown(page_header("Dashboard", "Real-time customer churn analytics overview"), unsafe_allow_html=True)
